@@ -35815,6 +35815,10 @@
 
 	var _Paper2 = _interopRequireDefault(_Paper);
 
+	var _done = __webpack_require__(381);
+
+	var _done2 = _interopRequireDefault(_done);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	//informs that no tasks are added yet
@@ -35832,10 +35836,11 @@
 	    return _react2.default.createElement(
 	      _Paper2.default,
 	      { zDepth: 1, style: this.style },
+	      _react2.default.createElement(_done2.default, { color: 'green' }),
 	      _react2.default.createElement(
-	        'h3',
+	        'p',
 	        null,
-	        'All tasks are completed. Add new ones'
+	        'All tasks are completed.'
 	      )
 	    );
 	  }
@@ -35843,6 +35848,44 @@
 	});
 
 	exports.default = TaskEmpty;
+
+/***/ },
+/* 380 */,
+/* 381 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _pure = __webpack_require__(338);
+
+	var _pure2 = _interopRequireDefault(_pure);
+
+	var _SvgIcon = __webpack_require__(347);
+
+	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ActionDone = function ActionDone(props) {
+	  return _react2.default.createElement(
+	    _SvgIcon2.default,
+	    props,
+	    _react2.default.createElement('path', { d: 'M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z' })
+	  );
+	};
+	ActionDone = (0, _pure2.default)(ActionDone);
+	ActionDone.displayName = 'ActionDone';
+	ActionDone.muiName = 'SvgIcon';
+
+	exports.default = ActionDone;
 
 /***/ }
 /******/ ]);

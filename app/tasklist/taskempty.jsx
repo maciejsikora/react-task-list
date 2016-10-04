@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Paper from 'material-ui/Paper';
+import Done from 'material-ui/svg-icons/action/done';
 //informs that no tasks are added yet
 var TaskEmpty = React.createClass({
 
@@ -13,7 +14,8 @@ var TaskEmpty = React.createClass({
 
     return (
       <Paper zDepth={1} style={this.style} >
-        <h3>All tasks are completed. Add new ones</h3>
+        <Done color="green" />
+        <p>All tasks are completed.</p>
       </Paper>
     );
   }
