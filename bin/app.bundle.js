@@ -27929,7 +27929,7 @@
 	  floatButtonStyle: {
 	    position: "fixed",
 	    right: "20px",
-	    bottom: "100px"
+	    bottom: "70px"
 	  },
 	  handleTaskAdd: function handleTaskAdd() {
 
