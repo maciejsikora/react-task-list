@@ -7,7 +7,7 @@ module.exports = {
     module: {
       loaders: [
         {
-          test: /\.jsx*$/,
+          test: /\.jsx*$/,//takes js and jsx files
           exclude: /(node_modules|bower_components)/,
           loader: 'babel', // 'babel-loader' is also a valid name to reference
           query: {
